@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loginnav{
+    border: 1px solid;
+    margin-left: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+.loginnav a{
+    text-decoration: none;
+}
+.logo{
+    width: 10%;
+    height: 5%;
+    margin: 10px;
+}
+.form-control .me-2{
+    width: 50%;
+}
+.slide{
+    margin-bottom: 5%;
+}
+.card-group{
+    margin:10px;
+
+}
+.card{
+    margin: 10px;
+}
+
+.h2 span {
+    color: #fb6b26;
+}
+.a{
+    margin-top: 5%;
+
+}
+.h2 a{
+    text-decoration: none;
+    margin-left:25px;
+   
+}
+.tdduan{
+    margin-left: 25px;
+} 
+.mb-4 a{
+    text-decoration: none;
+
+}
+.list-menu_small{
+    position: absolute;
+    box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.4);
+    display: none;
+    width: 190px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    margin-left: 1px;
+    margin-top: 2px;
+
+}
+.list-menu_small li{
+    list-style: none;
+    display: block;
+    padding-top: 5px;
+    margin-left: 5px;
+
+
+}
+.list-menu_small li:hover{
+    width:80%;
+}
+.list-menu_small li a:hover{
+    color: rgb(15, 127, 254);
+}
+
+.list-menu_small a{
+    text-decoration: none;
+    color: #333;
+}
+.nav-item.list-menu:hover .list-menu_small{
+    display: block;
+}
+.loginfm{
+    width: 98%;
+    background: url('../image/nenlogin.jpg');
+    background-size: cover;
+    background-position-y: -80px;
+    margin-left: 10px;
+}
+.loginform{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#demoForm{
+    margin-left: 30%;
+    max-width: 600px;
+    background: rgba(0, 0, 0 , 0.5);
+    flex-grow: 1;
+    padding: 70px 70px 80px;
+    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+}
+.boxtitle{
+    font-size: 25px;
+    color: rgb(9, 9, 11);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mb10{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.boxcenter{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dkf{
+    border-radius: 5px;
+    width: 100%;
+}
+.formdky{
+    padding: 75px;
+}
+.smf{
+    border-radius: 3px ;
+    background-color: rgb(160, 189, 244);
+}
+.qpas{
+    width: 45%;
+}
+.smf:hover{
+    background-color:rgb(65, 65, 224) ;
+    color: #f5f5f5;
+}
+.tinhnangt a{
+    text-decoration: none;
+}
+.hinh{
+    width: 30%;
+}
+
+.slide{
+    margin-left: 5px;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image-table {
+    display: table;
+    width: 100%;
+    border-spacing: 10px;
+  }
+
+  .image-row {
+    display: table-row;
+  }
+.row_cell{
+    width: 400px;
+    position: relative;
+}
+  .image-cell {
+    display: table-cell;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+    transform-origin: center center;
+  }
+
+  .image-cell img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .image-cell:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    
+  } */
+  /* .row{
+    position: relative;
+    width: 335px; 
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .card{
+    transform-origin: center center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .card img{
+    transition: 0.5s;
+    width: 335px;
+    height: 268px;
+    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+  }
+  .car img:hover{
+    transform: scale(1.15);
+    
+} */
+  .tour{
+    position: relative;
+    width: 335px; 
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.img-tour{
+    transform-origin: center center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-tour img{
+    transition: 0.5s;
+    width: 335px;
+    height: 268px;
+    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+}
+.img-tour img:hover{
+    transform: scale(1.15);
+    
+}
