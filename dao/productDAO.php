@@ -57,9 +57,13 @@ function loadall_sp($kyw = "", $id_dm = 0)
 }
 function loadone_sp($id_sp)
 {
-    $sql = "select * from sanpham where id_sp=" . $id_sp;
-    $suasp = pdo_query_one($sql);
-    return $suasp; //co ket qua tra ve phai return
+    $sql = "select * from sanpham where id_sp= :id";
+    $db = connect_db();
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":id",$id_sp);
+    $statement->execute();
+    $row = $statement->fetch();
+    return $row;//co ket qua tra ve phai return
 }
 function load_ten_dm($id_dm)
 {

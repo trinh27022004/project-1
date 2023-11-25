@@ -1,8 +1,14 @@
 <?php
-function insert_bl($noidung, $id_tk, $id_sp, $ngay_bl)
+function insert_bl($noi_dung,$id_tk, $id_sp, $ngay_bl)
 {
-    $sql = "insert into binhluan(noidung,id_tk,id_sp,ngay_bl) values('$noidung','$id_tk','$id_sp','$ngay_bl')";
-    pdo_execute($sql);
+    $sql = "insert into binhluan(noi_dung,id_tk,id_sp,ngay_bl) values(:noi_dung,:id_tk,:id_sp,:ngay_bl)";
+    $db = connect_db();
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":noi_dung",$noi_dung);
+    $statement->bindValue(":id_sp",$id_sp);
+    $statement->bindValue(":id_tk",$id_tk);
+    $statement->bindValue(":ngay_bl",$ngay_bl);
+    $statement->execute();
 }
 
 function delete_bl($id_bl)
@@ -44,8 +50,10 @@ function loadall_bll($id_sp)
 
     $db = connect_db();
     $statement = $db->prepare($sql);
+    $statement->bindValue(":id",$id_sp);
     $statement->execute();
-    return $statement;//co ket qua tra ve phai return ket qua tra ve phai return
+    $row = $statement->fetch();
+    return $row;//co ket qua tra ve phai return ket qua tra ve phai return
 }
 function loadone_spbl($id_sp)
 {

@@ -193,49 +193,49 @@
     transform: scale(1.1);
     
   } */
-  /* .row{
+  .spham{
     position: relative;
-    width: 335px; 
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     margin-bottom: 20px;
     border-radius: 10px;
-    margin: 10px;
   }
-  .card{
+  .hinhsp{
     transform-origin: center center;
     overflow: hidden;
     border-radius: 10px;
   }
-  .card img{
+  .hinhsp img{
     transition: 0.5s;
     width: 335px;
     height: 268px;
     border-radius: 10px 10px 0 0;
     border-radius: 10px;
   }
-  .car img:hover{
+  .hinhsp img:hover{
     transform: scale(1.15);
     
-} */
+}
   .tour{
     position: relative;
-    width: 335px; 
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     margin-bottom: 20px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px;
+    display: flex;
 }
 .img-tour{
     transform-origin: center center;
     overflow: hidden;
     border-radius: 10px;
+    padding: 10px;
+
 }
 .img-tour img{
     transition: 0.5s;
-    width: 335px;
-    height: 268px;
+    width: 500px;
+    height: 300px;
     border-radius: 10px 10px 0 0;
     border-radius: 10px;
 }
@@ -243,3 +243,26 @@
     transform: scale(1.15);
     
 }
+.boxcontent {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  .boxcontent2 {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #eee;
+  }
+  .boxft {
+    padding: 10px;
+    background-color: bisque;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }

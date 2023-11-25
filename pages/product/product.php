@@ -8,12 +8,13 @@
   
 
 
-<div class="row">
+<div class="row spham">
 <?php  foreach ($load_product as $s): 
-    // $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
+
+     $linksp = "index.php?action=ctietsp&id_sp=" . $s['id_sp'];
   ?>
   <div class="col-3">
-  <div class="card ">
+  <div class="card hinhsp">
   <a class="linksp " href="<?php echo $linksp ?>">
     <img src="./upload/<?php echo $s['image']?>" class="card-img-top" width="150px" height="250px" alt="...">
     </a>

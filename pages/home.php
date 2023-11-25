@@ -80,18 +80,18 @@
   </h2>
   <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
   <!-- <?php
-  $i = 0;
-  foreach ($spnew as $s) {
-    extract($s);
-    $tt = $price;
-    $hinh = $hinhpath.$image;
-    // if (($i == 2) || ($i == 5) || ($i == 8)) {
-    //   $mr = "";
-    // } else {
-    //   $mr = "mr";
-    // }
+        $i = 0;
+        foreach ($spnew as $s) {
+          extract($s);
+          $tt = $price;
+          $hinh = $hinhpath . $image;
+          // if (($i == 2) || ($i == 5) || ($i == 8)) {
+          //   $mr = "";
+          // } else {
+          //   $mr = "mr";
+          // }
 
-    echo '<div class="card-group ">
+          echo '<div class="card-group ">
         <div class="card">
         <a class="linksp" href="' . $linksp . '">
             <img class="imsp" src="' . $hinh . '" />
@@ -121,32 +121,32 @@
   // </div>
   </div>
       </div>';
-    $i += 1;
-  }
-  ?> -->
+          $i += 1;
+        }
+        ?> -->
 
 
-<div class="row">
-<?php  foreach ($spnew as $s): 
-    $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
-  ?>
-  <div class="col-3">
-  <div class="card ">
-  <a class="linksp " href="<?php echo $linksp ?>">
-    <img src="./upload/<?php echo $s['image']?>" class="card-img-top" width="150px" height="250px" alt="...">
-    </a>
-    <div class="card-body">
-    <a class="linksp text-decoration-none" href="<?php echo $linksp ?>">
-      <h5 class="card-title"><?php echo $s['name']?></h5>
-      </a>
-      <p class="card-text"><?php echo $s['mota']?></p>
-      <a href="#" class="btn btn-primary">03375950260</a>
-    </div>
+  <div class="row spham">
+    <?php foreach ($spnew as $s) :
+      $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
+    ?>
+      <div class="col-3">
+        <div class="card hinhsp ">
+          <a class="linksp " href="<?php echo $linksp ?>">
+            <img src="./upload/<?php echo $s['image'] ?>" class="card-img-top" width="150px" height="250px" alt="...">
+          </a>
+          <div class="card-body">
+            <a class="linksp text-decoration-none" href="<?php echo $linksp ?>">
+              <h5 class="card-title"><?php echo $s['name'] ?></h5>
+            </a>
+            <p class="card-text"><?php echo $s['mota'] ?></p>
+            <a href="#" class="btn btn-primary">03375950260</a>
+          </div>
+        </div>
+      </div>
+    <?php endforeach ?>
   </div>
-  </div>
-  <?php endforeach ?>
-</div>
-<!-- 
+  <!-- 
 <div class="image-table">
   <div class="image-row">
     <div class="row_cell">
@@ -174,32 +174,40 @@
   </div>
 </div>
    -->
-   <div class="tour">
-                            <div class="img-tour">
-                                <a href="#"><img src="../image/sp1.webp" alt="" ></a>
-  
-                            </div>
-                           
-                        </div>
+  <div class="tour">
+    <div class="img-tour">
+      <a href="#"><img src="../image/sl3.jpg" alt=""></a>
+
+    </div>
+    <div class="img-tour">
+      <a href="#"><img src="../image/sp3.webp" alt=""></a>
+
+    </div>
+    <div class="img-tour">
+      <a href="#"><img src="../image/sp5.webp" alt=""></a>
+
+    </div>
+
+  </div>
 
   <div class="row spham">
-<?php  foreach ($spnew as $s): 
-    $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
-  ?>
-  <div class="col-3">
-  <div class="card hinhsp ">
-  <a class="linksp " href="<?php echo $linksp ?>">
-    <img src="./upload/<?php echo $s['image']?>" class="card-img-top" width="150px" height="250px" alt="...">
-    </a>
-    <div class="card-body">
-    <a class="linksp text-decoration-none" href="<?php echo $linksp ?>">
-      <h5 class="card-title"><?php echo $s['name']?></h5>
-      </a>
-      <p class="card-text"><?php echo $s['mota']?></p>
-      <a href="#" class="btn btn-primary">03375950260</a>
-    </div>
+    <?php foreach ($spnew as $s) :
+      $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
+    ?>
+      <div class="col-3">
+        <div class="card hinhsp ">
+          <a class="linksp " href="<?php echo $linksp ?>">
+            <img src="./upload/<?php echo $s['image'] ?>" class="card-img-top" width="150px" height="250px" alt="...">
+          </a>
+          <div class="card-body">
+            <a class="linksp text-decoration-none" href="<?php echo $linksp ?>">
+              <h5 class="card-title"><?php echo $s['name'] ?></h5>
+            </a>
+            <p class="card-text"><?php echo $s['mota'] ?></p>
+            <a href="#" class="btn btn-primary">03375950260</a>
+          </div>
+        </div>
+      </div>
+    <?php endforeach ?>
   </div>
-  </div>
-  <?php endforeach ?>
-</div>
 </main>

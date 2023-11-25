@@ -13,7 +13,7 @@ if (!isset($_SESSION['user'])) {
     <ul>';
     foreach ($dsbl as $bl) {
         extract($bl);
-        echo '<tr><td>' . $noidung . '</td>';
+        echo '<tr><td>' . $noi_dung . '</td>';
         echo '<td>' . $username . '</td>';
         echo '<td>' . $ngay_bl . '</td></tr>';
     }
@@ -46,7 +46,7 @@ if (!isset($_SESSION['user'])) {
 
                     foreach ($dsbl as $bl) {
                         extract($bl);
-                        echo '<tr><td>' . $noidung . '</td>';
+                        echo '<tr><td>' . $noi_dung . '</td>';
                         echo '<td>' . $username . '</td>';
                         echo '<td>' . $ngay_bl . '</td></tr>';
                     }
@@ -57,19 +57,19 @@ if (!isset($_SESSION['user'])) {
         <div class="boxft search">
             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                 <input type="hidden" name="id_sp" value="<?= $id_sp ?>">
-                <input type="text" name="noidung" />
+                <input type="text" name="noi_dung">
                 <input id="submit_button" name="guibl" type="submit" value="GUI BINH LUAN" class="gbl">
             </form>
         </div>
         <?php
         if (isset($_POST['guibl']) && ($_POST['guibl'])) {
-            $noidung = $_POST['noidung'];
+            $noi_dung = $_POST['noi_dung'];
             $id_sp = $_POST['id_sp'];
             $id_tk = $_SESSION['user']['id_tk'];
             // $ngaybl = date("h:i:sa d/m/Y");
             date_default_timezone_set("Asia/Ho_Chi_Minh");
             $ngay_bl = date("Y-m-d H:i:s", time());
-            insert_bl($noidung, $id_tk, $id_sp, $ngay_bl);
+            insert_bl($noi_dung, $id_tk, $id_sp, $ngay_bl);
             header("location:" . $_SERVER['HTTP_REFERER']);
         }
         ?>

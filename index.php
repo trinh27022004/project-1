@@ -7,8 +7,7 @@ include "./dao/accountDAO.php";
 include "./dao/categoryDAO.php";
 include "./dao/productDAO.php";
 $spnew = loadall_sp_home();
-$allsp = loadall_sp();
-
+$dsdm = loadall_dm();
 
 
 // getAllUser();
@@ -104,12 +103,13 @@ if (isset($_GET['action']))
             break;
         case 'ctietsp':
             if (isset($_GET['id_sp']) && ($_GET['id_sp']) > 0) {
-                $onesp = loadone_sp($_GET['id_sp']);
-                extract($onesp);
+                $id = $_GET['id_sp'];
+                $onesp = loadone_sp($id);
                 $spcl = loadone_sp_cungloai($_GET['id_sp'], $id_dm);
                 include "./pages/ctietsp.php";
             } else {
                 include "./pages/home.php";
+                include "./pages/product/product.php";
             }
             break;
         case 'sanpham':
@@ -127,6 +127,7 @@ if (isset($_GET['action']))
             $tendm = load_ten_dm($id_dm);
             include "./pages/product/product.php";
             break;
+      
         case 'thoat':
             session_unset();
             header('Location:index.php');

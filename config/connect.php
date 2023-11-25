@@ -1,6 +1,6 @@
 <?php
 function connect_db() {
-    $servername = "localhost";
+    $servername = "localhost:3307";
     $username = "root";
     $password = "";
     $dbname = "duan1";

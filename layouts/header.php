@@ -7,6 +7,7 @@
     <title>Bất Động Sản Việt Nam</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./public/bootstrap-5.3.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="./public/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
 </head>
 
@@ -17,16 +18,16 @@
             <img src="./image/logo.png" width="100%" height="5%" alt="">
         </div>
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="../index.php">Trang chủ</a>
+            <a class="navbar-brand" href="../index.php">Trang chủ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.php">Trang Chủ </a>
-                    </li>
+                    </li> -->
                 <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index?action=sanpham">Sản Phẩm </a>
                     </li>
@@ -58,8 +59,15 @@
                     <input class="form-control me-2" type="search" name="kyw" id="" placeholder="Tìm Kiếm ..." aria-label="Search">
                     <button class="btn btn-outline-success" name="timkiem" id="tk" type="submit">Tìm Kiếm</button>
                 </form>
-                <div class="loginnav">
-                    <button class="btn " type="submit"><a href="index?action=dangnhap">Đăng Nhập</a><a href="index?action=dky">/Đăng Ký</a></button>
+                <div class="loginnav btn ">
+                    <?php  
+                    if(!(isset($_SESSION["user"]))){
+                        echo '<button class="btn " type="submit"><a href="index?action=dangnhap">Đăng Nhập</a><a href="index?action=dky">/Đăng Ký</a></button>';
+                    }else{
+                        echo'<button class="btn " type="submit"><a href="index?action=dangnhap">Tài Khoản</a></button>';
+                    }
+                        ?>
+                    <!-- <button class="btn " type="submit"><a href="index?action=dangnhap">Đăng Nhập</a><a href="index?action=dky">/Đăng Ký</a></button> -->
                 </div>
             </div>
         </div>
