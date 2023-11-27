@@ -31,11 +31,11 @@ if (is_file($hinhpath)) {
                 <form action="index.php?action=edit_taikhoan" method="post" enctype="multipart/form-data" id="demoForm">
                  <div class="boxtitle">Cập Nhật Tài Khoản</div>
                 <p>
-                   UserName: <br />
+                    Tài khoản: <br />
                     <input type="text" class="dkf" name="username" value="<?= $username ?>">
                     </p>
                     <p>
-                    password: <br />
+                    Mật khẩu: <br />
                     <input type="password" class="dkf" name="password" value="<?= $password ?>">
                     </p>
                     <p>

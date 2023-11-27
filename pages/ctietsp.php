@@ -27,7 +27,7 @@
         </script> -->
         <iframe src="../pages/comment/binhluanform.php?id_sp=<?= $id_sp ?>" width="100%" height="300px" frameborder="0"></iframe>
       <div class="row mb" id="bl">
-            <div class="boxtitle">BINH LUAN</div>
+            <div class="boxtitle">BÌNH LUẬN</div>
             <div class="row boxcontent">
 
             </div>
@@ -36,21 +36,21 @@
       <!-- Form Đặt Lịch -->
 
       <form class="mb-4">
-        <h3>Đặt Lịch</h3>
+        <h3>Đặt lịch</h3>
         <div class="mb-3">
-          <label for="appointmentDate" class="form-label">Ngày Đặt:</label>
+          <label for="appointmentDate" class="form-label">Ngày đặt:</label>
           <input type="date" class="form-control" id="appointmentDate">
         </div>
         <div class="mb-3">
-          <label for="appointmentTime" class="form-label">Thời Gian:</label>
+          <label for="appointmentTime" class="form-label">Thời gian:</label>
           <input type="time" class="form-control" id="appointmentTime">
         </div>
-        <button type="submit" class="btn btn-primary">Đặt Lịch</button>
+        <button type="submit" class="btn btn-primary">Đặt lịch</button>
       </form>
 
       <!-- Form Sản Phẩm Cùng Loại -->
       <form class="mb-4">
-        <h3>Sản Phẩm Cùng Loại</h3>
+        <h3>Sản phẩm cùng loại</h3>
         <!-- Thêm các trường thông tin sản phẩm cùng loại -->
       </form>
     </div>

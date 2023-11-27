@@ -1,15 +1,15 @@
 <div class="row">
     <div class="row formtitle">
-        <h1>DANH SACH BINH LUAN</h1>
+        <h1>DANH SÁCH BÌNH LUẬN</h1>
     </div>
     <div class="row formtk">
         <div class="row mb10 formdsbl">
             <table>
                 <tr>
-                    <th>HANG HOA</th>
-                    <th>SO BL</th>
-                    <th>MOI NHAT</th>
-                    <th>CU NHAT</th>
+                    <th>HÀNG HÓA</th>
+                    <th>SỐ BÌNH LUẬN</th>
+                    <th>MỚI NHẤT</th>
+                    <th>CŨ NHẤT</th>
                     <th></th>
                 </tr>
 
@@ -23,7 +23,7 @@
          <td>' . $moinhat . '</td>
          <td>' . $cunhat . '</td>
         <td> 
-      <a href="' . $ct . '"> <input type="button" value="Chi tiet" id="ct"/></a>  </td>
+      <a href="' . $ct . '"> <input type="button" value="Chi tiết" id="ct"/></a>  </td>
                         </tr>';
                 }
                 ?>
@@ -32,9 +32,9 @@
 
 
         <div class=" mb10">
-            <input type="submit" value="CHON TAT CA" />
-            <input type="submit" value="BO CHON TAT CA" />
-            <input type="submit" value="XOA CAC MUC DA CHON" />
+            <input type="submit" value="CHỌN TẤT CẢ" />
+            <input type="submit" value="BỎ CHỌN TẤT CẢ" />
+            <input type="submit" value="XÓA CÁC MỤC ĐÃ CHỌN" />
         </div>
     </div>
 </div>

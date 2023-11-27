@@ -4,9 +4,7 @@
             <section
                 class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
-                <div class="me-5 d-none d-lg-block">
-                    <span>Get connected with us on social networks:</span>
-                </div>
+              
                 <!-- Left -->
 
                 <!-- Right -->
@@ -47,7 +45,7 @@
                             </h6>
                             <p>
                             Delta Platinum là một sản phẩm của Delta Web, với nỗ lực phát triển bền vững về thị trường bất động sản, Delta Platinum đều có thể giúp bạn.
-Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách sử dụng công cụ tìm kiếm hoặc các đường link ngay trên trang chủ.
+                                Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách sử dụng công cụ tìm kiếm hoặc các đường link ngay trên trang chủ.
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -102,9 +100,9 @@ Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách
                             <p><i class="fas fa-home me-3"></i> Bạn cần hỗ trợ ?</p>
                             <p>
                                 <i class="fas fa-envelope me-3"></i>
-                                deltawebltd@gmail.com
+                                Yourhouse18303@gmail.com
                             </p>
-                            <p><i class="fas fa-phone me-3"></i>An Thượng, Hà Nội,</p>
+                            <p><i class="fas fa-phone me-3"></i>Hòa Minh - Liên Chiểu - Đà Nẵng</p>
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -115,13 +113,13 @@ Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách
 
             <!-- Copyright -->
             <div class="text-center p-4"
-                style="background-color: rgba(0, 0, 0, 0.05);">
-                © Bản quyền thuộc về
-                <a class="text-reset fw-bold" href="#">Delta Platinum</a>
+                style="background-color:gray;color:aliceblue;">
+                © Bản quyền thuộc về 
+                <a class="text-reset fw-bold" href="#">YOURHOUSE</a>
                 | Cung cấp bởi 
-                <a class="text-reset fw-bold" href="https://www.sapo.vn/?utm_term=&campaign=kho_theme-sapo">Sapo</a>
+                <a class="text-reset fw-bold" href="https://www.sapo.vn/?utm_term=&campaign=kho_theme-sapo">TRINH-VU</a>
             </div>
-      
+        
             <!-- Copyright -->
         </footer>
         <!-- Footer -->

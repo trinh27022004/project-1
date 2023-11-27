@@ -38,24 +38,24 @@
 <body>
 <div class="row">
   <div class="row formtitle">
-    <h1>QUAN LY LOAI HANG</h1>
+    <h1>QUẢN LÝ LOẠI HÀNG</h1>
   </div>
   <div class="row formct">
     <form action="index.php?action=add_category" method="post" id="demoForm">
       <div class="row mb10">
-        Ma loai <br />
+        Mã loại <br />
         <input type="text" name="idloai" disabled placeholder="auto number" />
       </div>
       <div class="row mb10">
-        Ten loai <br />
+        Tên loại <br />
         <input type="text" name="nameloai" />
       </div>
 
-      <input type="submit" value="THEM" name="them">
+      <input type="submit" value="THÊM" name="them">
 
-      <input type="submit" value="NHAP LAI" name="nl">
+      <input type="submit" value="NHẬP LẠI" name="nl">
       <a href="index.php?action=load_category">
-        <input class="btn" type="button" value="DANH SACH">
+        <input class="btn" type="button" value="DANH SÁCH">
       </a>
       <br>
     </form>

@@ -50,11 +50,11 @@
       extract($_SESSION['user']);
     ?>
     <div id="demoForm">
-      <div class="row mb10 xc ">
-        XIN CHAO <br />
+      <div id="loginadmin" class="row mb10 xc ">
+        XIN CHÀO  <br />
         <?= $username ?>
       </div>
-      <div class="row hinh mb10">
+      <div id="loginimg"  class="row hinh mb10">
         <?php
         $hinhpath = "./upload/" . $hinh;
         if (is_file($hinhpath)) {

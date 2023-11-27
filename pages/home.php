@@ -15,43 +15,43 @@
     <div class="carousel-inner slide">
       <div class="carousel-item active">
         <img src="./image/sl3.jpg" class="d-block w-100 " height="800px" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <div id="slogan" class="carousel-caption d-none d-md-block">
+          <h5>Uy tín tạo thương hiệu</h5>
+          <p>Chất lượng- chuyên nghiệp - nhanh chóng.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./image/sl6.jpg" class="d-block w-100 " height="800px" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <div id="slogan" class="carousel-caption d-none d-md-block">
+          <h5>Uy tín tạo thương hiệu</h5>
+          <p>Chất lượng - chuyên nghiệp - nhanh chóng.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./image/sl4.jpeg" class="d-block w-100 " height="800px" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <div id="slogan" class="carousel-caption d-none d-md-block">
+          <h5>Uy tín tạo thương hiệu</h5>
+          <p>Chất lượng - chuyên nghiệp - nhanh chóng.</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
   </div>
   <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
       Mẫu
-      <span>Sản Phẩm</span>
+      <span> Nhà không gian xưa.</span>
     </a>
   </h2>
-  <p class="tdduan">Sản Phẩm mới nhất này cho bạn lựa chọn ?</p>
-  <div class="card-group">
+  <p class="tdduan">Sản Phẩm mới nhất này cho bạn lựa chọn?</p>
+  <div id="card-groupsm" class="card-group">
     <div class="card">
       <img src="./image/sp1.webp" alt="">
     </div>
@@ -74,8 +74,8 @@
 
   <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
-      Dự Án
-      <span>Mới Nhất </span>
+      Mẫu
+      <span>  Nhà cấp 4 hiện đại. </span>
     </a>
   </h2>
   <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
@@ -174,9 +174,16 @@
   </div>
 </div>
    -->
+   <h2 class="h2">
+    <a href="#" title="Dự Án Mới ">
+      Villa 
+      <span> 5 sao  </span>
+    </a>
+  </h2>
+  <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
   <div class="tour">
     <div class="img-tour">
-      <a href="#"><img src="../image/sl3.jpg" alt=""></a>
+      <a href="#"><img src="../image/villa1.jpg" alt=""></a>
 
     </div>
     <div class="img-tour">

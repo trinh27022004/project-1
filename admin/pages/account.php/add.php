@@ -37,19 +37,19 @@
             },
             messages: {
                 "username": {
-                    required: "Bắt buộc nhập username",
+                    required: "Bắt buộc nhập tài khoản",
                     maxlength: "Hãy nhập tối đa 10 ký tự"
                 },
                 "password": {
-                    required: "Bắt buộc nhập password",
+                    required: "Bắt buộc nhập mật khẩu",
                     minlength: "Hãy nhập ít nhất 3 ký tự"
                 },
                 "re-password": {
-                    equalTo: "Hai password phải giống nhau",
+                    equalTo: " Mật khẩu không trùng khớp ",
                     minlength: "Hãy nhập ít nhất 3 ký tự"
                 },
                 "hoten": {
-                    required: "Bắt buộc nhập ho ten",
+                    required: "Bắt buộc nhập họ và tên",
                     maxlength: "Hãy nhập ít nhất 5 ký tự"
                 },
                 "email": {
@@ -57,10 +57,10 @@
                     email: "Hãy nhập dúng định dạng email"
                 },
                 "address": {
-                    required: "Bắt buộc nhập address",
+                    required: "Bắt buộc nhập địa chỉ",
                 },
                 "tel": {
-                    required: "Bắt buộc nhập tel",
+                    required: "Bắt buộc nhập SĐT",
                 }
             }
         });
@@ -73,7 +73,7 @@
 </style>
 <div class="row">
     <div class="row formtitle">
-        <h1>THEM TAI KHOAN</h1>
+        <h1>THÊM TÀI KHOẢN</h1>
     </div>
     <div class=" row formct">
         <div style="color: red;">
@@ -86,27 +86,27 @@
         <form action="index.php?action=add_user" method="post" enctype="multipart/form-data" id="demoForm">
 
             <div class=" row mb10">
-                <p>TEN DANG NHAP <br>
+                <p>TÊN ĐĂNG NHẬP <br>
                     <input type="text" name="username" />
                 </p>
             </div>
             <div class="row mb10">
-                <p>MAT KHAU <br>
+                <p> MẬT KHẨU <br>
                     <input type="text" name="password" id="password" />
                 </p>
             </div>
             <div class="row mb10">
-                <p> XAC NHAN MAT KHAU <br>
+                <p> XÁC NHẬN MẬT KHẨU <br>
                     <input type="text" name="re-password" />
                 </p>
             </div>
             <div class="row mb10">
-                <p>HO VA TEN <br>
+                <p>HỌ VÀ TÊN <br>
                     <input type="text" name="hoten" />
                 </p>
             </div>
             <div class="row mb10">
-                <p>HINH <br>
+                <p>HÌNH<br>
                     <input type="file" name="hinh" />
                 </p>
             </div>
@@ -116,12 +116,12 @@
                 </p>
             </div>
             <div class=" row mb10">
-                <p class="mhh"> ADDRESS <br>
+                <p class="mhh"> ĐỊA CHỈ <br>
                     <input type="text" name="address" width="100px" />
                 </p>
             </div>
             <div class="row mb10">
-                <p>TEL <br>
+                <p> SĐT <br>
                     <input type="text" name="tel" />
                 </p>
             </div>
@@ -132,11 +132,11 @@
                  </p>
              </div> -->
 
-            <input type="submit" value="Them" name="them">
+            <input type="submit" value="THÊM" name="them">
 
-            <input type="submit" value="NHAP LAI" name="nl">
+            <input type="submit" value="NHẬP LẠI" name="nl">
             <a href="index.php?action=load_user">
-                <input class="btn" type="button" value="DANH SACH">
+                <input class="btn" type="button" value="DANH SÁCH">
             </a>
             <br>
         </form>

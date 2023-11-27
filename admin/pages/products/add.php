@@ -30,12 +30,12 @@
             },
             messages: {
                 "tensp ": {
-                    required: "Bắt buộc nhập username",
+                    required: "Bắt buộc nhập tài khoản",
                     maxlength: "Hãy nhập tối đa 10 ký tự"
                 },
                 "price": {
-                    required: "Bắt buộc nhập password",
-                    positiveNumber: "Price phải là số dương"
+                    required: "Bắt buộc nhập mật khẩu",
+                    positiveNumber: "Gía phải là số dương"
                 },
                 "gg ": {
                     required: "Bắt buộc nhập giảm giá ",
@@ -58,13 +58,13 @@
 </style>
 <div class="r">
     <div class="row formtitle">
-        <h1>THEM MOI HANG HOA</h1>
+        <h1>THÊM LOẠI HÀNG HÓA</h1>
     </div>
     <div class=" boxtr">
 
         <form action="index.php?action=add_product" method="post" enctype="multipart/form-data" id="demoForm">
             <div class="mb10">
-                <p class="mhh"> DANH MUC <br>
+                <p class="mhh"> DANH MỤC <br>
                     <select name="id_dm" id="">
                         <?php
                         foreach ($dslh as $ds) {
@@ -80,12 +80,12 @@
 
     <div class=" boxtr">
         <div class="mb10">
-            <p class="mhh"> TEN HANG HOA <br>
+            <p class="mhh"> TÊN HÀNG HÓA <br>
                 <input type="text" name="tensp" width="100px" />
             </p>
         </div>
         <div class=" mb10">
-            <p>HINH ANH <br>
+            <p> HÌNH ẢNH <br>
             <div class="hdb">
                 <input type="file" name="img" />
             </div>
@@ -95,7 +95,7 @@
 
     <div class=" boxtr">
         <div class="mb10 dg">
-            <p class="mhh"> DON GIA <br>
+            <p class="mhh"> ĐƠN GIÁ <br>
             <div class="mb-3">
 
                 <input type="text" class="form-control" name="price">
@@ -103,7 +103,7 @@
             </p>
         </div>
         <div class="mb10 dg">
-            <p>SO LUOT XEM <br>
+            <p> SỐ LƯỢT XEM <br>
             <div class="mb-3">
                 <input type="text" class="form-control" id="" placeholder="0" disabled>
             </div>
@@ -111,17 +111,17 @@
         </div>  
     </div>
     <br>
-    <p class="mt">MO TA
+    <p class="mt"> MÔ TẢ
     <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="mota"></textarea>
     </div>
     </p>
     <div class="i">
-        <input type="submit" value="THEM" name="them">
+        <input type="submit" value="THÊM" name="them">
 
-        <input type="submit" value="NHAP LAI" name="nl">
+        <input type="submit" value="NHẬP LẠI" name="nl">
         <a href="index.php?action=load_product">
-            <input class="btn" type="button" value="DANH SACH">
+            <input class="btn" type="button" value="DANH SÁCH">
         </a>
     </div>
 

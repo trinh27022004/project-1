@@ -1,14 +1,14 @@
 <div class="row">
   <div class="row formtitle">
-    <h1>DANH SACH SẢN PHẨM</h1>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
   </div>
   <div class="row formct">
     <div class="row mb10 formdslh">
       <table>
         <tr>
           <th></th>
-          <th>MA LOAI</th>
-          <th>TEN LOAI</th>
+          <th>MÃ LOẠI</th>
+          <th>TÊN LOẠI</th>
           <th></th>
         </tr>
 
@@ -21,8 +21,8 @@
   <td>' . $id_dm . '</td>
   <td>' . $name . '</td>
   <td>
-   <a href="' . $suadm . '"><input type="button" value="sua" id="s" /></a> 
-   <a href="' . $xoadm . '"> <input type="button" value="xoa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  
+   <a href="' . $suadm . '"><input type="button" value="Sửa" id="s" /></a> 
+   <a href="' . $xoadm . '"> <input type="button" value="Xóa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  
   </td>
   </tr>';
         }
@@ -32,10 +32,10 @@
     </div>
 
     <div class=" mb10">
-      <input type="submit" value="CHON TAT CA" />
-      <input type="submit" value="BO CHON TAT CA" />
-      <input type="submit" value="XOA CAC MUC DA CHON" />
-      <a href="index.php?action=add_category"><input type="button" value="Nhap them" /></a>
+      <input type="submit" value="CHỌN TẤT CẢ" />
+      <input type="submit" value="BỎ CHỌN TẤT CẢ" />
+      <input type="submit" value="XÓA CÁC MỤC ĐÃ CHỌN" />
+      <a href="index.php?action=add_category"><input type="button" value="NHẬP THÊM" /></a>
     </div>
   </div>
 </div>

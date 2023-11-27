@@ -30,35 +30,35 @@
                     <a href="index?action=load_user" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#speedometer2"></use></svg>
-                        Account
+                        Tài khoản
                     </a>
                 </li>
                 <li>
                     <a href="index?action=add_category" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#table"></use></svg>
-                        Category
+                        Loại hàng
                     </a>
                 </li>
                 <li>
                     <a href="index?action=add_product" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#grid"></use></svg>
-                        Products
+                        Sản phẩm
                     </a>
                 </li>
                 <li>
                     <a href="index?action=load_comment" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#people-circle"></use></svg>
-                        Comment
+                        Bình luận
                     </a>
                 </li>
                 <li>
                     <a href="../index.php" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#people-circle"></use></svg>
-                        Webiste
+                        Về trang chủ
                     </a>
                 </li>
             </ul>

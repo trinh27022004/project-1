@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    /* overflow-x: hidden;*/
+} 
+
 .loginnav{
     border: 1px solid;
     margin-left: 15px;
@@ -10,12 +12,15 @@
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     border: none;
 }
+.loginnav.btn{
+    padding: 1px !important;
+}
 .loginnav a{
     text-decoration: none;
 }
 .logo{
-    width: 10%;
-    height: 5%;
+    width: 11% !important;
+    height: 6%;
     margin: 10px;
 }
 .form-control .me-2{
@@ -60,6 +65,7 @@
     z-index: 999;
     margin-left: 1px;
     margin-top: 2px;
+    
 
 }
 .list-menu_small li{
@@ -67,14 +73,22 @@
     display: block;
     padding-top: 5px;
     margin-left: 5px;
+    
 
 
 }
 .list-menu_small li:hover{
     width:80%;
+    
 }
 .list-menu_small li a:hover{
-    color: rgb(15, 127, 254);
+    color: rgb(255, 255, 255);
+   
+}
+.list-menu_small li{
+    width: 100%;
+ 
+    
 }
 
 .list-menu_small a{
@@ -100,10 +114,12 @@
 #demoForm{
     margin-left: 30%;
     max-width: 600px;
-    background: rgba(0, 0, 0 , 0.5);
+    background: rgba(199, 153, 153, 0.5);
     flex-grow: 1;
     padding: 70px 70px 80px;
     box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+    border: 1px solid #000;
+    box-shadow: 0 0 5px rgba(122, 29, 29, 0.5);
 }
 .boxtitle{
     font-size: 25px;
@@ -204,6 +220,8 @@
     transform-origin: center center;
     overflow: hidden;
     border-radius: 10px;
+    border: none !important;
+    box-shadow: 0px 4px 30px 4px rgba(0, 0, 0, 0.07) !important;
   }
   .hinhsp img{
     transition: 0.5s;
@@ -266,3 +284,112 @@
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
+
+
+.nav-item a:hover{/* hover các chức năng */
+    background-color: #4e9548 !important;
+    color: #fff !important;
+}
+
+.btn-outline-success { /* hover box các chức năng */
+    --bs-btn-hover-bg: #487495 !important;
+    --bs-btn-border-color:black !important;
+    --bs-btn-color: rgb(255, 255, 255) !important;
+    --bs-btn-active-bg: rgb(184, 69, 17) !important;
+}
+#loginadmin{/* căn chỉnh login admin */
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#slogan{/* màu chữ trên slide */
+    color: rgb(246, 246, 245);
+    font-weight: bold;
+
+}
+
+#cuon{/* thanh cuộn */
+    height: 70px;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 1;
+    font-weight: bold;
+}
+.logo{
+    all: unset;
+    width: 73px;
+}
+
+.loginnav {
+    box-shadow: none !important;
+    border: solid 1px black !important;
+    
+}
+#btnhead{/* box đăng nhập đăng ký */
+    background-color: #4e9548 !important;
+
+    
+}
+
+#tim{/* box tìm kiếm */
+    background-color: #4e9548 ;
+    color: #fff;
+    margin-left: 3px;
+}
+.d-flex input{
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #bdbaba;
+}
+#dm{ /* màu chữ danh mục */
+    color: #000;
+}
+
+.card-title{/* màu chữ card sản phẩm */
+    color:rgb(184, 69, 17) !important ;
+}
+
+#listkh{
+    color: #fb6b26;
+}   
+.textitd{ /* chữ phần giới thiệu*/
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    text-indent: 15px;
+}
+.slgt{
+    width: auto;
+    height: auto;
+}
+.btn{ /*chữ box đăng ký đăng nhập, tìm kiếm*/
+    font-weight: bold !important;
+    /* --bs-btn-padding-x: 0rem !important; */
+    
+    
+}
+.list-menu_small{ /*list danh mục*/
+    background-color: #4e9548  !important ;
+    
+}
+
+.footer{
+    background-image: url(../image/footer-background-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 10px;
+}
+.abc{
+    color: #fff;
+}
+body{
+    overflow-x: hidden;
+}

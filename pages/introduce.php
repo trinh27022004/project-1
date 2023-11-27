@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu cụ tiểu la</title>
+    <title>Giới thiệu cụ tiểu là: </title>
     <style>
         h2{
             color:rgb(0, 195, 255);
@@ -26,11 +26,11 @@
 </head>
 <body>
     <div class="slgt">
-        <img src="../image/gt.webp" alt="">
+        <!-- <img src="../image/gt.webp" alt=""> -->
     </div>
     <h2>Giới thiệu</h2>
-    <div align="justify">
-        <center><img src="../image/sl4.jpeg" width="50%" height="500"></center>
+    <div class="textitd" >
+            <center><img src="../image/sl4.jpeg" width="50%" height="500"></center>
         <p>Trong cuộc sống hiện đại ngày nay, quá trình toàn cầu hóa đã và đang diễn ra mạnh mẽ trên thế giới nói chung và tại Việt Nam nói riêng. Trước sự phát triển mạnh mẽ vượt bậc đó, thị trường bất động sản ở Việt Nam ra đời nhằm đáp ứng nhu cầu hội nhập kinh tế quốc tế. Cũng chính vì lý do đó, Công Ty Cổ Phần Đầu Tư Delta Platinum đã ra đời dựa trên tầm nhìn và chiến lược phát triển của thị trường Bất động sản Việt Nam.</p>
         <p>Với sự dẫn dắt đầy tận tâm của ban Lãnh đạo dày dạn kinh nghiệm trong ngành cùng với đội ngũ nhân viên trẻ, đầy nhiệt huyết và năng động, chịu khó ham học hỏi Công ty Cổ phần Đầu tư Delta Platinum đã dần tạo được vị thế của mình trên thương trường cũng như trên thị trường Bất động sản Việt Nam. Chúng tôi tự hào khi mang đến cho khách hàng những dự án, sản phẩm với chất lượng tốt nhất để lại ấn tượng sâu sắc trong lòng khách hàng.</p>
         <p>Công ty Cổ phần đầu tư Delta Platinum luôn tâm niệm rằng niềm tin của khách hàng chính là đích đến của sự thành công. Ngoài ra góp phần vào sự thành công đó chính là chất lượng sản phẩm, dịch vụ và đạo đức kinh doanh. Tất cả những điều đó đều được xem là nền tảng vững chắc để công ty bất động sản Delta Platinum phát triển lâu dài, tạo dựng niềm tin tuyệt đối đối với quý khách hàng và đối tác.

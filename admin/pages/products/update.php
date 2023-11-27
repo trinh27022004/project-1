@@ -11,12 +11,12 @@ if (is_file($hinhpath)) {
 ?>
 <div class="r">
     <div class="row formtitle">
-        <h1>CAP NHAP HANG HOA</h1>
+        <h1>CẬP NHẬT HÀNG HÓA</h1>
     </div>
     <div class=" boxtr">
         <form action="index.php?action=update_product" method="post" enctype="multipart/form-data">
             <select name="id_dm" id="">
-                <option value="0" selected>TAT CA</option>
+                <option value="0" selected>TẤT CẢ</option>
                 <?php
                 foreach ($dslh as $ds) {
 
@@ -32,12 +32,12 @@ if (is_file($hinhpath)) {
     <div class=" boxtr">
 
         <div class="mb10">
-            <p class="mhh"> TEN HANG HOA <br>
+            <p class="mhh"> TÊN HÀNG HÓA <br>
                 <input type="text" name="tensp" width="100px" value="<?= $name ?>" />
             </p>
         </div>
         <div class=" mb10">
-            <p>HINH ANH <br>
+            <p> HÌNH ẢNH <br>
             <div class="hdb">
                 <input type="file" name="img" />
             </div>
@@ -55,7 +55,7 @@ if (is_file($hinhpath)) {
     <div class=" boxtr">
 
         <div class="mb10 dg">
-            <p class="mhh"> DON GIA <br>
+            <p class="mhh"> ĐƠN GIÁ <br>
             <div class="mb-3">
 
                 <input type="text" class="form-control" name="price" value="<?= $price ?>">
@@ -76,7 +76,7 @@ if (is_file($hinhpath)) {
     </div>
     <br>
 
-    <p class="mt">MO TA
+    <p class="mt"> MÔ TẢ
     <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="mota"><?= $mota ?></textarea>
     </div>
@@ -84,11 +84,11 @@ if (is_file($hinhpath)) {
 
     <input type="hidden" name="id_sp" value="<?= $id_sp ?>">
     <div class="i">
-        <input type="submit" value="Cap nhap" name="capnhap">
+        <input type="submit" value="Cập nhật" name="capnhap">
 
-        <input type="submit" value="NHAP LAI" name="nl">
+        <input type="submit" value="Nhập lại" name="nl">
         <a href="index.php?action=load_product">
-            <input class="btn" type="button" value="DANH SACH">
+            <input class="btn" type="button" value="DANH SÁCH">
         </a>
     </div>
 </div>

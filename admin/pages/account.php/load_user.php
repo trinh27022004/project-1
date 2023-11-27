@@ -1,6 +1,6 @@
 <div class="row">
     <div class="row formtitle">
-        <h1>DANH SACH KHACH HANG</h1>
+        <h1>DANH SÁCH KHÁCH HÀNG</h1>
     </div>
     <div class="tbao" style="color: red;">
         <?php
@@ -14,14 +14,14 @@
             <table>
                 <tr>
                     <th></th>
-                    <th>MA KH</th>
-                    <th>TEN DANG NHAP</th>
-                    <th>MAT KHAU</th>
-                    <th>HINH</th>
-                    <th> EMAIL</th>
-                    <th> DIA CHI</th>
-                    <th> DIEN THOAI</th>
-                    <th>VAI TRO?</th>
+                    <th>Mã KH</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Mật khẩu</th>
+                    <th>Hình</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Điện thoại</th>
+                    <th>Vai trò </th>
                     <th></th>
                 </tr>
 
@@ -46,8 +46,8 @@
          <td>' . $address . '</td>
          <td>' . $tel . '</td>
          <td>' . $name_role . '</td>
-        <td> <a href="' . $suatk . '"><input type="button" value="sua" id="s" /></a> 
-      <a href="' . $xoatk . '"> <input type="button" value="xoa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  </td>
+        <td> <a href="' . $suatk . '"><input type="button" value="Sửa" id="s" /></a> 
+      <a href="' . $xoatk . '"> <input type="button" value="Xóa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  </td>
                         </tr>';
                 }
                 ?>
@@ -56,10 +56,10 @@
 
 
         <div class=" mb10">
-            <input type="submit" value="CHON TAT CA" />
-            <input type="submit" value="BO CHON TAT CA" />
-            <input type="submit" value="XOA CAC MUC DA CHON" />
-            <a href="index.php?action=add_user"><input type="button" value="Nhap them" /></a>
+            <input type="submit" value="CHỌN TẤT CẢ" />
+            <input type="submit" value="BỎ CHỌN TẤT CẢ" />
+            <input type="submit" value="XÓA CÁC MỤC ĐÃ CHỌN" />
+            <a href="index.php?action=add_user"><input type="button" value="NHẬP THÊM" /></a>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <div class="row">
     <div class="row formtitle">
-        <h1>DANH SACH HANG HOA</h1>
+        <h1>DANH SÁCH HÀNG HÓA</h1>
     </div>
     <div style="color: red;">
             <?php
@@ -11,9 +11,9 @@
     <div class="row formhh">
         <div class="row mb10 formdshh ">
             <form action="index.php?action=load_product" method="post">
-               Nhap ten san pham can tim: <input type="text" name="kyw" id="">
+               Nhập tên sản phẩm cần tìm: <input type="text" name="kyw" id="">
                 <select name="id_dm" id="">
-                    <option value="0" selected>TAT CA</option>
+                    <option value="0" selected>TẤT CẢ</option>
                     <?php
                       foreach ($dslh as $ds) {
                         extract($ds);
@@ -26,12 +26,12 @@
             <table>
                 <tr>
                     <th></th>
-                    <th>MA HH</th>
-                    <th>TEN HH</th>
-                    <th>HINH</th>
-                    <th>MO TA</th>
-                    <th>DON GIA</th>
-                    <th>CHUC NANG</th>
+                    <th>MÃ HH</th>
+                    <th>TÊN HH</th>
+                    <th>HÌNH</th>
+                    <th>MÔ TẢ</th>
+                    <th>ĐƠN GIÁ</th>
+                    <th>CHỨC NĂNG</th>
                     <th></th>
                 </tr>
                 <?php foreach ($load_product as $d) {
@@ -52,8 +52,8 @@
                      <td>' . $mota . '</td>
                      <td>' . number_format($price, 0, ",", ".") . '$' . '</td>
                       <td>
-                <a href="' . $suasp . '"><input type="button" value="sua" id="s" /></a> 
-               <a href="' . $xoasp . '"> <input type="button" value="xoa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  
+                <a href="' . $suasp . '"><input type="button" value="Sửa" id="s" /></a> 
+               <a href="' . $xoasp . '"> <input type="button" value="Xóa" onclick ="return confirm(\'ban co chac chan muon xoa?\')" id="x"/></a>  
                     </td>
                  </tr>';
                 }
@@ -62,10 +62,10 @@
         </div>
 
         <div class=" mb10">
-            <input type="submit" value="CHON TAT CA" />
-            <input type="submit" value="BO CHON TAT CA" />
-            <input type="submit" value="XOA CAC MUC DA CHON" />
-            <a href="index.php?action=add_product"><input type="button" value="Nhap them" /></a>
+            <input type="submit" value="CHỌN TẤT CẢ" />
+            <input type="submit" value="BỎ CHỌN TẤT CẢ" />
+            <input type="submit" value="XÓA CÁC MỤC ĐÃ CHỌN" />
+            <a href="index.php?action=add_product"><input type="button" value="NHẬP THÊM" /></a>
         </div>
         
     </div>
