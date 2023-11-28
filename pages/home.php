@@ -177,7 +177,7 @@
    <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
       Villa 
-      <span> 5 sao  </span>
+      <span> cao cấp  </span>
     </a>
   </h2>
   <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
