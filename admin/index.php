@@ -4,6 +4,8 @@
 <?php include '../dao/productDAO.php' ?>
 <?php include '../dao/accountDAO.php' ?>
 <?php include '../dao/commentDAO.php' ?>
+<?php include '../dao/bookDAO.php' ?>
+
 
 <?php include '../config/connect.php' ?>
 
@@ -201,10 +203,62 @@ if (isset($_GET['action']))
             break;
         case 'load_comment':
 
-            $dsbl = loadall_bl();
+            $load_bl = loadall_bl();
 
-            include "./pages/comment.php/load_comment.php";
+            include "./pages/comment/load_comment.php";
             break;
+        case 'xoabl':
+            if (isset($_GET['id_bl']) && ($_GET['id_bl']) > 0) {
+                delete_bl($_GET['id_bl']);
+            }
+            // header("location:index.php?act=ctbl");
+            // $dsbl = loadall_bluan(0);
+            if (isset($_GET['id_sp']) && ($_GET['id_sp']) > 0) {
+                $onebl = loadone_spbl($_GET['id_sp']);
+                $ctbl = loadall_bluan($_GET['id_sp']);
+            }
+
+            include "./pages/comment/ctbl.php";
+            break;
+        case 'ctbl':
+            if (isset($_GET['id_sp']) && ($_GET['id_sp']) > 0) {
+                $onebl = loadone_spbl($_GET['id_sp']);
+                $ctbl = loadall_bluan($_GET['id_sp']);
+            }
+            include "./pages/comment/ctbl.php";
+            break;
+        case 'load_book':
+            $load_dl = loadall_dl();
+            include "./pages/book/load_book.php";
+            break;
+        case 'xoadl':
+            if (isset($_GET['id_dl']) && ($_GET['id_dl']) > 0) {
+                delete_dl($_GET['id_dl']);
+            }
+            // header("location:index.php?act=ctbl");
+            // $dsbl = loadall_bluan(0);
+            if (isset($_GET['id_sp']) && ($_GET['id_sp']) > 0) {
+                $onedl = loadone_spdl($_GET['id_sp']);
+                $ctdl = loadall_dlich($_GET['id_sp']);
+            }
+
+            include "./pages/book/ctdl.php";
+            break;
+        case 'ctdl':
+            if (isset($_GET['id_sp']) && ($_GET['id_sp']) > 0) {
+                $onedl = loadone_spdl($_GET['id_sp']);
+                $ctdl = loadall_dlich($_GET['id_sp']);
+                // $status=status_dl($_GET['$id_sp']);
+            }
+            include "./pages/book/ctdl.php";
+            break;
+        // case'status':
+        //     if(isset($_GET['status'])){
+        //         $status=status_dl($_GET['$status']);
+                
+        //     }
+        //     include "./pages/book/ctdl.php";
+        //     break;
     }
 ?>
 <?php include './layouts/footer.php' ?>

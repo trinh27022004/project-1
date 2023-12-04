@@ -1,12 +1,4 @@
-
-<h2 class="tbao">
-                <?php
-                if (isset($tbao) && ($tbao) != "") {
-                    echo $tbao;
-                }
-                ?>
-            </h2>
-  <div class="loginfm">
+<div class="loginfm">
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
@@ -71,7 +63,7 @@
         <?php if ($role == 2) { ?>
           <li><a href="../../admin/index.php">Đăng nhập admin</a></li>
         <?php } ?>
-        <li><a href="index.php?action=thoat">Thoát</a></li>
+        <li><a href="index.php?action=thoat">Đăng Xuất </a></li>
       </div>
       </div>
     <?php
@@ -95,9 +87,13 @@
         <div class="mb10" >
           <input type="checkbox"  name="ghinho" id="" /> Ghi nhớ tài khoản?
         </div>
-
+        <?php
+        if (isset($tbao) && ($tbao) != "") {
+            echo '<script>var tbao = "' . $tbao . '";</script>';
+        }
+        ?>
         <div class="row mb10">
-          <input class="smf" name="dangnhap" type="submit" value="Đăng Nhập" />
+          <input class="smf" name="dangnhap" type="submit" value="Đăng Nhập"/>
         </div>
         
       <div class="tinhnangt" ><a href="index.php?action=quenmk">Quên mật khẩu</a>
@@ -106,5 +102,6 @@
   
     <?php  } ?>
   </div>
+</div>
 </div>
 </div>

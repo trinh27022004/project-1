@@ -10,7 +10,8 @@
     margin-left: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    border: none;
+    /* height: 40px; */
+    border: none !important;
 }
 .loginnav.btn{
     padding: 1px !important;
@@ -61,7 +62,7 @@
     box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.4);
     display: none;
     width: 190px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
     z-index: 999;
     margin-left: 1px;
     margin-top: 2px;
@@ -82,7 +83,7 @@
     
 }
 .list-menu_small li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
    
 }
 .list-menu_small li{
@@ -93,14 +94,14 @@
 
 .list-menu_small a{
     text-decoration: none;
-    color: #333;
+    color: #070606;
 }
 .nav-item.list-menu:hover .list-menu_small{
     display: block;
 }
 .loginfm{
     width: 98%;
-    background: url('../image/nenlogin.jpg');
+    background: url('../image/wp8063327.jpg');
     background-size: cover;
     background-position-y: -80px;
     margin-left: 10px;
@@ -114,12 +115,10 @@
 #demoForm{
     margin-left: 30%;
     max-width: 600px;
-    background: rgba(199, 153, 153, 0.5);
+    background: rgba(135, 134, 134, 0.5);
     flex-grow: 1;
     padding: 70px 70px 80px;
-    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
-    border: 1px solid #000;
-    box-shadow: 0 0 5px rgba(122, 29, 29, 0.5);
+    box-shadow: 0px 0px 17px 2px rgba(97, 95, 95, 0.8);
 }
 .boxtitle{
     font-size: 25px;
@@ -287,8 +286,8 @@
 
 
 .nav-item a:hover{/* hover các chức năng */
-    background-color: #4e9548 !important;
-    color: #fff !important;
+    background-color: #fafafa !important;
+    color: #10c065 !important;
 }
 
 .btn-outline-success { /* hover box các chức năng */
@@ -310,7 +309,7 @@
 
 }
 
-#cuon{/* thanh cuộn */
+/* #cuon{/* thanh cuộn */
     height: 70px;
     position: fixed !important;
     top: 0;
@@ -319,40 +318,31 @@
     padding: 10px 0px;
     z-index: 1;
     font-weight: bold;
-}
+} */
 .logo{
     all: unset;
     width: 73px;
 }
 
-.loginnav {
-    box-shadow: none !important;
-    border: solid 1px black !important;
-    
-}
-#btnhead{/* box đăng nhập đăng ký */
-    background-color: #4e9548 !important;
-
-    
-}
 
 #tim{/* box tìm kiếm */
     background-color: #4e9548 ;
     color: #fff;
     margin-left: 3px;
+    
 }
-.d-flex input{
+/* .d-flex input{
     border-radius: 4px;
     padding: 6px;
     outline: none;
     border: 1px solid #bdbaba;
-}
+} */
 #dm{ /* màu chữ danh mục */
     color: #000;
 }
 
 .card-title{/* màu chữ card sản phẩm */
-    color:rgb(184, 69, 17) !important ;
+    color:rgb(19, 124, 229) !important ;
 }
 
 #listkh{
@@ -376,7 +366,7 @@
     
 }
 .list-menu_small{ /*list danh mục*/
-    background-color: #4e9548  !important ;
+    background-color: #fafcfa  !important ;
     
 }
 
@@ -392,4 +382,19 @@
 }
 body{
     overflow-x: hidden;
+}
+
+.accbl{
+    display: flex;
+
+}
+.showbl{
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.texttk{
+    display: flex;
+}
+.tentk{
+    margin: 3px;
 }

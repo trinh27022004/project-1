@@ -18,16 +18,16 @@ function delete_bl($id_bl)
 }
 function loadall_bluan($id_sp)
 {
-    $sql = "SELECT bl.noidung,bl.ngay_bl,tk.ho_ten as nguoibl,sp.name,bl.id_sp,bl.id_bl
+    $sql = "SELECT bl.noi_dung,bl.ngay_bl,tk.ho_ten as nguoibl,bl.id_sp,bl.id_bl,tk.hinh
     from sanpham sp INNER join binhluan bl on sp.id_sp=bl.id_sp
-    INNER join taikhoan tk on bl.id_tk=tk.id_tk where 1";
-    if ($id_sp > 0)
-        $sql .= " and bl.id_sp='" . $id_sp . "'";
-    // $sql .= " and bl.id_bl=  " . $id_bl;
-    $sql .= " order by bl.id_bl desc ";
+    INNER join taikhoan tk on bl.id_tk=tk.id_tk where bl.id_sp=:id_sp";
+        $db = connect_db();
+        $statement = $db->prepare($sql);
+        $statement->bindValue(":id_sp",$id_sp);
+        $statement -> execute();
+        $row = $statement ->fetchAll();
+        return $row;
 
-    $ctbl = pdo_query($sql);
-    return $ctbl; //co ket qua tra ve phai return
 }
 function loadall_bl()
 {
@@ -52,14 +52,19 @@ function loadall_bll($id_sp)
     $statement = $db->prepare($sql);
     $statement->bindValue(":id",$id_sp);
     $statement->execute();
-    $row = $statement->fetch();
+    $row = $statement->fetchAll();
     return $row;//co ket qua tra ve phai return ket qua tra ve phai return
 }
 function loadone_spbl($id_sp)
 {
-    $sql = "select * from sanpham sp join binhluan bl on sp.id_sp =bl.id_sp where bl.id_sp=" . $id_sp;
-    $sp = pdo_query_one($sql);
-    return $sp; //co ket qua tra ve phai return
+    $sql = "select * from sanpham sp join binhluan bl on sp.id_sp =bl.id_sp where bl.id_sp=:id_sp";
+    
+    $db = connect_db();
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":id_sp",$id_sp);
+    $statement->execute();
+    $row = $statement->fetch();
+    return $row;//co ket qua tra ve phai return ket qua tra ve phai return
 }
 // function loadone_dm($id_dm)
 // {

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./public/bootstrap-5.3.2/dist/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="./public/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rns01zlyFhgZlGb8rDEqMWgTc2Hf7FJv7H82FD8PQPSPqD/DAwnQr3eDZ5O1gHdi" crossorigin="anonymous">
+
 </head>
     
 
@@ -41,9 +43,6 @@
                             Danh mục
                         </a>
                         <ul class="list-menu_small">
-                            <!-- <li><a class="list-item" href="#">Action</a></li>
-                            <li><a class="list-item" href="#">Another action</a></li>
-                            <li><a class="list-item" href="#">Something else here</a></li> -->
                             <?php
                             foreach ($dsdm as $ds) {
                                 extract($ds);
@@ -54,22 +53,23 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Liên hệ </a>
+                        <a class="nav-link active" aria-current="page" href="index?action=contact">Liên hệ </a>
                     </li>
                 </ul>
                 <form action="index.php?action=sanpham" method="post" class="d-flex" role="search">
-                    <input class="inputsr"class="form-control me-2" type="search" name="kyw" id="" placeholder="Tìm Kiếm ..." aria-label="Search">
+                    <input class="form-control me-2" type="search" name="kyw" id="" placeholder="Tìm Kiếm ..." aria-label="Search">
                     <a href="#"><button id="tim" class="btn btn-outline-success" name="timkiem" id="tk" type="submit">Tìm kiếm</button></a>
                 </form>
                 <div id="btnhead" class="loginnav btn">
                     <?php  
+                    
                     if(!(isset($_SESSION["user"]))){
-                        echo '<button class="btn" type="submit"><a class="abc" href="index?action=dangnhap">Đăng nhập</a> | <a class="abc" href="index?action=dky">Đăng ký</a></button>';
+                        echo '<button class="btn " type="submit"><a class="abc text-dark" href="index?action=dangnhap">Đăng nhập</a> | <a class="abc text-dark" href="index?action=dky">Đăng ký</a></button>';
                     }else{
-                        echo'<button" id="btna" class="btn" type="submit"><a class="abc" href="index?action=dangnhap">Quản lí tài khoản</a></button>';
+        
+                        echo'<button"  class="btn" type="submit"><a class="abc texttk " href="index?action=dangnhap"><img class="rounded-circle" src="./upload/'.$_SESSION['user']['hinh'].'"  width="30px" height="30px" alt="" >  <p class="text-dark tentk">  '.$_SESSION['user']['username'].'</p> </a></button>'; 
                     }
                         ?>
-                    <!-- <button class="btn" type="submit"><a href="index?action=dangnhap">Đăng Nhập</a><a href="index?action=dky">/Đăng Ký</a></button> -->
                 </div>
             </div>
         </div>

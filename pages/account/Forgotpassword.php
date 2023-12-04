@@ -1,10 +1,4 @@
-<h2 class="tbao">
-                <?php
-                if (isset($tbao) && ($tbao) != "") {
-                    echo $tbao;
-                }
-                ?>
-            </h2>
+
  <div class="loginfm">
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
@@ -26,7 +20,7 @@
 
                 "email": {
                     required: "Bắt buộc nhập email",
-                    email: "Hãy nhập dúng định dạng email"
+                    email: "Hãy nhập đúng định dạng email"
                 }
             }
         });

@@ -23,7 +23,7 @@
       <h5 class="card-title"><?php echo $s['name']?></h5>
       </a>
       <p class="card-text"><?php echo $s['mota']?></p>
-      <a href="#" class="btn btn-primary">0375950260</a>
+      <a href="<?php echo $linksp ?>" class="btn btn-primary">liên Hệ:0375950260<br>(Đặt Lịch) </a>
     </div>
   </div>
   </div>

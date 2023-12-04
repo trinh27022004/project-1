@@ -128,11 +128,12 @@
 
   <div class="row spham">
     <?php foreach ($spnew as $s) :
-      $linksp = "index.php?action=ctietsp&id_sp=" . $id_sp;
+      $linksp = "index.php?action=ctietsp&id_sp=" .$s['id_sp'];
+
     ?>
       <div class="col-3">
         <div class="card hinhsp ">
-          <a class="linksp " href="<?php echo $linksp ?>">
+          <a class="linksp " href="<?php echo $linksp?>">
             <img src="./upload/<?php echo $s['image'] ?>" class="card-img-top" width="150px" height="250px" alt="...">
           </a>
           <div class="card-body">
@@ -140,46 +141,21 @@
               <h5 class="card-title"><?php echo $s['name'] ?></h5>
             </a>
             <p class="card-text"><?php echo $s['mota'] ?></p>
-            <a href="#" class="btn btn-primary">03375950260</a>
+            <a href="<?php echo $linksp ?>" class="btn btn-primary">Hotline:0375950260<br>(Đặt Lịch)</a>
           </div>
         </div>
       </div>
     <?php endforeach ?>
   </div>
-  <!-- 
-<div class="image-table">
-  <div class="image-row">
-    <div class="row_cell">
-      <div class="image-cell">
-        <img src="../image/sp5.webp" alt="Hình ảnh 1">
-      </div>
-    </div>
-    <div class="image-cell">
-      <img src="../image/sp4.webp" alt="Hình ảnh 2">
-    </div>
-    <div class="image-cell">
-      <img src="../image/sp2.webp" alt="Hình ảnh 3">
-    </div>
-  </div>
-  <div class="image-row">
-    <div class="image-cell">
-      <img src="../image/sp1.webp" alt="Hình ảnh 4">
-    </div>
-    <div class="image-cell">
-      <img src="../image/sp3.webp" alt="Hình ảnh 5">
-    </div>
-    <div class="image-cell">
-      <img src="../image/sp4.webp" alt="Hình ảnh 6">
-    </div>
-  </div>
-</div>
-   -->
+ 
    <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
       Villa 
       <span> cao cấp  </span>
     </a>
   </h2>
+  <img src="../image/giphy.gif" width="100%" alt="">
+
   <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
   <div class="tour">
     <div class="img-tour">
@@ -196,6 +172,7 @@
     </div>
 
   </div>
+  
 
   <div class="row spham">
     <?php foreach ($spnew as $s) :
@@ -211,10 +188,11 @@
               <h5 class="card-title"><?php echo $s['name'] ?></h5>
             </a>
             <p class="card-text"><?php echo $s['mota'] ?></p>
-            <a href="#" class="btn btn-primary">03375950260</a>
+            <a href="<?php echo $linksp ?>" class="btn btn-primary">Hotline:0375950260<br>(Đặt Lịch)</a>
           </div>
         </div>
       </div>
     <?php endforeach ?>
   </div>
+
 </main>

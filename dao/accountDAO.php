@@ -16,9 +16,14 @@ function insert_tk($username, $password, $ho_ten, $file, $email, $address, $tel)
      $statement->execute();}
 function check_user($username, $password)
 {
-    $sql = "select * from taikhoan where username='" . $username . "' AND password='" . $password . "'";
-    $sp = pdo_query_one($sql);
-    return $sp;
+    $sql = "select * from taikhoan where `username`=:username  AND `password`=:password";
+    $db = connect_db();
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":username",$username);
+    $statement->bindValue(":password",$password);
+    $statement->execute();
+    $row = $statement ->fetch();
+    return $row;
     // return pdo_query_all($sql); //co ket qua tra ve phai return
 }
 function update_taikhoan($id_tk, $username, $password, $ho_ten, $file, $email, $address, $tel)

@@ -55,6 +55,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="index?action=load_book" class="nav-link link-dark">
+                        <svg class="bi me-2" width="16" height="16"><use
+                                xlink:href="#people-circle"></use></svg>
+                        Lịch Hẹn Khách Hàng
+                    </a>
+                </li>
+                <li>
                     <a href="../index.php" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16"><use
                                 xlink:href="#people-circle"></use></svg>

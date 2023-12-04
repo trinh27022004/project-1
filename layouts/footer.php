@@ -44,7 +44,7 @@
                                 <i class="fas fa-gem me-3"></i>Về Chúng Tôi 
                             </h6>
                             <p>
-                            Delta Platinum là một sản phẩm của Delta Web, với nỗ lực phát triển bền vững về thị trường bất động sản, Delta Platinum đều có thể giúp bạn.
+                            YOURHOUSE là một sản phẩm của Delta Web, với nỗ lực phát triển bền vững về thị trường bất động sản, Delta Platinum đều có thể giúp bạn.
                                 Tìm tin bán nhà đất hoặc cho thuê nhà đất mới nhất bằng cách sử dụng công cụ tìm kiếm hoặc các đường link ngay trên trang chủ.
                             </p>
                         </div>
@@ -57,16 +57,16 @@
                                 Chính Sách
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Trang Chủ</a>
+                                <a href="../index.php" class="text-reset">Trang Chủ</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Sản Phẩm</a>
+                                <a href="index?action=sanpham" class="text-reset">Sản Phẩm</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Giới Thiệu</a>
+                                <a href="index?action=introduce" class="text-reset">Giới Thiệu</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Liên Hệ</a>
+                                <a href="index?action=contact" class="text-reset">Liên Hệ</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -78,16 +78,16 @@
                                 Hướng Dẫn
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Trang Chủ</a>
+                                <a href="../index.php" class="text-reset">Trang Chủ</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Sản Phẩm </a>
+                                <a href="index?action=sanpham" class="text-reset">Sản Phẩm </a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Giới Thiệu</a>
+                                <a href="index?action=introduce" class="text-reset">Giới Thiệu</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Liên Hệ</a>
+                                <a href="index?action=contact" class="text-reset">Liên Hệ</a>
                             </p>
                         </div>
                         <!-- Grid column -->
