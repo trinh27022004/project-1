@@ -1,6 +1,6 @@
 <div class="row">
   <div class="row formtitle">
-    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <h1>DANH SÁCH DANH MỤC</h1>
   </div>
   <div class="row formct">
     <div class="row mb10 formdslh">

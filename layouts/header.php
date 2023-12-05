@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bất Động Sản Việt Nam</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./public/bootstrap-5.3.2/dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <script src="./public/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rns01zlyFhgZlGb8rDEqMWgTc2Hf7FJv7H82FD8PQPSPqD/DAwnQr3eDZ5O1gHdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/bootstrap-5.3.2/dist/css/bootstrap.css">   
+     <script src="./public/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rns01zlyFhgZlGb8rDEqMWgTc2Hf7FJv7H82FD8PQPSPqD/DAwnQr3eDZ5O1gHdi" crossorigin="anonymous">
 </head>
     
 

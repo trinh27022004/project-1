@@ -38,7 +38,7 @@
 <body>
 <div class="row">
   <div class="row formtitle">
-    <h1>QUẢN LÝ LOẠI HÀNG</h1>
+    <h1>QUẢN LÝ DANH MỤC</h1>
   </div>
   <div class="row formct">
     <form action="index.php?action=add_category" method="post" id="demoForm">

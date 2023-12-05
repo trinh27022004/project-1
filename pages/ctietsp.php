@@ -11,7 +11,7 @@
       <!-- Form Liên Hệ -->
       <form class="mb-4">
 
-        <button type="submit" class="btn btn-primary">Hotline:0375950260<br></button>
+        <button type="submit" class="btn btn-primary"><p><i class="fas fa-phone"></i> Hotline: 0375950260</p></button>
       </form>
       <!-- Form Đặt Lịch -->
     <!-- <?php 
@@ -121,7 +121,7 @@ foreach($load_bl as $bl):
 
 ?>
 <div class="accbl">
-<img src="./upload/<?php  echo $bl['hinh']?>" width="5%" height="7%" alt="avata"><p><?php  echo $bl['nguoibl']?></p>
+<img class="rounded-circle" src="./upload/<?php  echo $bl['hinh']?>   " width="3%" height="30px" alt="avata"><p> <?php  echo $bl['nguoibl']?></p>
 </div>
 <p><?php  echo $bl['noi_dung']?></p>
 <p><?php  echo $bl['ngay_bl']?></p>

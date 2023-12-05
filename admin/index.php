@@ -19,7 +19,7 @@ if (isset($_GET['action']))
                 $nameloai = $_POST['nameloai'];
                 if ($nameloai != "") {
                     insert_dm($nameloai);
-                    header("location:index.php?action=dslh");
+                    header("location:index.php?action=load_category");
                     $tbao = 'Them data thanh cong';
                 }
             }
@@ -72,7 +72,7 @@ if (isset($_GET['action']))
                 if ($tensp != "") {
                     insert_sp($tensp, $giasp, $file, $mota, $id_dm);
                     $tbao = 'Them data thanh cong';
-                    header("location:index.php?action=load_product");
+                    header("location:index.php?action:load_product");
                 }
             }
             $dslh = loadall_dm();

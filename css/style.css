@@ -61,7 +61,7 @@
     position: absolute;
     box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.4);
     display: none;
-    width: 190px;
+    width: 250px;
     /* border: 1px solid rgba(0, 0, 0, 0.5); */
     z-index: 999;
     margin-left: 1px;
@@ -342,9 +342,16 @@
 }
 
 .card-title{/* màu chữ card sản phẩm */
-    color:rgb(19, 124, 229) !important ;
+    color:rgb(19, 93, 229) !important ;
 }
+.card-title:hover{
+    color: #4e9548 !important;
+}
+.btn-primary:hover{
+    color: #090a09 !important ;
+    background-color:  #4e9548 !important;
 
+}
 #listkh{
     color: #fb6b26;
 }   
@@ -399,3 +406,13 @@ body{
 .tentk{
     margin: 3px;
 }
+.bannerqc{
+    margin: 50px ;
+    transition: transform 1s ease-in-out
+}
+  
+.bannerqc:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(16, 9, 9, 0.8);
+  }
+  

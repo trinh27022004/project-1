@@ -5,7 +5,7 @@ if (is_array($suadm)) {
 ?>
 <div class="row">
     <div class="row formtitle">
-        <h1>CẬP NHẬT TÀI KHOẢN</h1>
+        <h1>CẬP NHẬT DANH MỤC </h1>
     </div>
     <div class="row formct">
         <form action="index.php?action=update_category" method="post">

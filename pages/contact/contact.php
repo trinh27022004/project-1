@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rns01zlyFhgZlGb8rDEqMWgTc2Hf7FJv7H82FD8PQPSPqD/DAwnQr3eDZ5O1gHdi" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ</title>
+  <!-- Link đến Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Link đến Font Awesome CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+  <style>
+    /* Thêm các kiểu CSS tùy chỉnh của bạn ở đây */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
 
+    .contact-info {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-image {
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .contact-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .company-info {
+      margin-top: 20px;
+    }
+
+    .company-info i {
+      margin-right: 10px;
+    }
+
+    .contact-buttons {
+      margin-top: 20px;
+    }
+
+    .btn-call,
+    .btn-message {
+      width: 150px;
+      margin-right: 10px;
+    }
+
+  </style>
 </head>
 <body>
-<div class="container contact-container">
-    <h2 class="text-center">Liên hệ</h2>
-    <hr>
+
+
+
+  <div class="container mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <p class="font-weight-bold">Công ty: YOURHOUSE</p>
-            <p class="contact-icons"><i class="fas fa-map-marker-alt"></i>Địa chỉ: 112 Lý Thái Tông, Hòa Minh, Liên Chiểu, Đà Nẵng</p>
-            <p class="contact-icons"><i class="fas fa-phone"></i>Số điện thoại 0375950260</p>
-            <p class="contact-icons"><i class="fab fa-facebook-f"></i> <a href="#">Facebook:https://www.facebook.com/congtrinh.huynh.927/</a></p>
-            <p class="contact-icons"><i class="fab fa-whatsapp"></i> Zalo: Huỳnh Công Trình <span class="font-weight-bold">0375950260</span></p>
+      <!-- Bên thông tin mô tả về trang bất động sản -->
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h2>Thông Tin Liên Hệ</h2>
+          <p>
+            Mô tả về trang bất động sản và thông tin liên hệ có thể được đặt ở đây.
+            Bạn có thể thêm các đoạn văn bản, liên kết, hoặc thông tin liên hệ khác tùy ý.
+          </p>
+          <!-- Thêm thông tin công ty với icon -->
+          <div class="company-info">
+            <p><i class="fas fa-map-marker-alt"></i> Địa chỉ công ty:123 Lý Thái Tông, Hòa Minh, Liên Chiểu, Đà Nẵng</p>
+            <p><i class="fas fa-phone"></i>Điện thoại:<a href="">  0375950260</a></p>
+            <p><i class="fas fa-envelope"></i>  Email:<a href="email:trinhhcpd09141@fpt.edu.vn"> trinhhcpd09141@fpt.edu.vn</a></p>
+          </div>
+          <!-- Thêm các nút gọi và nhắn tin -->
+          <div class="contact-buttons">
+            <a href="tel:0375950260" class="btn btn-primary btn-call"><i class="fas fa-phone"></i> Gọi</a>
+            <a href="sms:0375950260" class="btn btn-secondary btn-message"><i class="fas fa-comment"></i> Nhắn tin</a>
+          </div>
         </div>
-        <div class="col-md-6 contact-image">
-            <img src="../../image/a1.webp" alt="Hình đẹp">
+      </div>
+
+      <!-- Bên hình ảnh -->
+      <div class="col-md-6">
+        <div class="contact-image">
+          <img src="../../image/Dich-vu-tong-dai-goi-tu-dong-870x520 (1).jpg"  alt="Hình ảnh liên quan">
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <!-- Link đến Bootstrap JS và Popper.js (cần thiết cho một số tính năng của Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

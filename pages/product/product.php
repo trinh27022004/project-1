@@ -23,7 +23,9 @@
       <h5 class="card-title"><?php echo $s['name']?></h5>
       </a>
       <p class="card-text"><?php echo $s['mota']?></p>
-      <a href="<?php echo $linksp ?>" class="btn btn-primary">liên Hệ:0375950260<br>(Đặt Lịch) </a>
+      <p class="card-text">Giá: <?php echo $s['price']?></p>
+
+      <a href="<?php echo $linksp ?>" class="btn btn-primary"><p><i class="fas fa-phone"></i> Hotline: 0375950260</p> <p><i class="fas fa-calendar-alt"></i> (Đặt Lịch)</p>  </p> </a>
     </div>
   </div>
   </div>
