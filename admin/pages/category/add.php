@@ -63,5 +63,11 @@
   </div>
 </div>
 </div>
+<div style="color: red;">
+    <?php
+    if (isset($tbao) && $tbao != "")
+      echo $tbao;
+    ?>
+  </div>
 </body>
 </html>

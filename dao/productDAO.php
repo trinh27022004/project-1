@@ -14,8 +14,22 @@ function insert_sp($tensp, $giasp, $file, $mota, $id_dm)
 
 function delete_sp($id_sp)
 {
-    $sql = "delete from sanpham where id_sp=" . $id_sp;
-    pdo_execute($sql);
+     $db = connect_db();
+     // Xóa bình luận trước
+     $sql = "DELETE FROM binhluan WHERE id_sp = :id_sp";
+     $statement = $db->prepare($sql);
+     $statement->bindValue(":id_sp", $id_sp, PDO::PARAM_INT);
+     $statement->execute();
+       // Xóa lịch hẹn trước
+    $sql = "DELETE FROM lichhen WHERE id_sp = :id_sp";
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":id_sp", $id_sp, PDO::PARAM_INT);
+    $statement->execute();
+     // xóa sp 
+    $sql = "delete from sanpham where id_sp=:id_sp";
+    $statement = $db->prepare($sql);
+    $statement->bindValue(":id_sp",$id_sp);
+    $statement->execute();
 }
 
 function loadall_sp_home()
