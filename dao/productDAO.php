@@ -43,14 +43,7 @@ function loadall_sp_home()
     $row = $statement->fetchAll();
     return $row;//co ket qua tra ve phai return
 }
-function loadall_sp_top10()
-{
-    //cach noi chuoi sql
-    //phai co cach khoang
-    $sql = "select * from sanpham where 1 order by luot_xem desc limit 0,10";
-    $dssp = pdo_query($sql);
-    return $dssp; //co ket qua tra ve phai return
-}
+
 function loadall_sp($kyw = "", $id_dm = 0)
 {
     //cach noi chuoi sql

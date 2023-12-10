@@ -8,25 +8,6 @@
       <p><strong>Giá:</strong> <?php echo $onesp['price'] ?></p>
       <p><strong>Mô tả:</strong> <?php echo $onesp['mota'] ?></p>
 
-      <!-- Form Liên Hệ -->
-      <form class="mb-4">
-
-        <button type="submit" class="btn btn-primary"><p><i class="fas fa-phone"></i> Hotline: 0375950260</p></button>
-      </form>
-      <!-- Form Đặt Lịch -->
-    <!-- <?php 
-      foreach($load_dl as $dl):
-
-        ?>
-        <div class="showdl">
-        <div class="accdl">
-        <img src="./upload/<?php  echo $dl['hinh']?>" width="10%" height="10%" alt="avata"><p><?php  echo $dl['nguoidl']?></p>
-        </div>
-        <p><?php  echo $dl['ngay_hen']?></p>
-        <p><?php  echo $dl['gio_hen']?></p>
-        <p><?php  echo $dl['ghi_chu']?></p>
-        </div>
-        <?php  endforeach ?> -->
         <form action="index.php?action=lichhen&id_sp=<?php echo $id?>"  method="Post">
   
       <form class="mb-4">
@@ -59,9 +40,11 @@
     <div class="col-md">
       <!-- Form Sản Phẩm Cùng Loại -->
  <form class="mb-4 showbl">
-      <h3>Đặc điểm dự án</h3>
+ <h3>Đặc điểm dự án</h3>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8562115876744!2d108.17188957586232!3d16.07294963933701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218e3918b461d%3A0x21027ebeefac9896!2zMTIzIEzDvSBUaMOhaSBUw7RuZywgVGhhbmggS2jDqiBUw6J5LCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1702197521262!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <br>
-Loại tin rao:Cho thuê<br>
+Loại tin:<br>
 - Địa chỉ:Phường Hòa Minh Liên Chiểu Đà Nẵng, Diện tích:175m, Phòng ngủ:3, Phòng WC:2, Hướng nhà(dự án):Đông Nam, Tên liên lạc: Huỳnh Công Trình-Nguyễn Xuân Vũ, Số điện thoại:0375 950 260 Email: trinhhcpd09141@fpt.edu.vn
 - Chi tiết dự án<br>
 - Căn hộ cao cấp Eurowindow River Park chính thức được tung ra thị trường. Chính sách siêu khủng gửi tặng khách hàng:<br>

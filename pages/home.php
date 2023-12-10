@@ -46,8 +46,8 @@
   </div>
   <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
-      Mẫu
-      <span> Nhà không gian xưa.</span>
+      Sự lựa chọn hàng đầu 
+      <span> dành cho Quý Khách Hàng.</span>
     </a>
   </h2>
   <p class="tdduan">Sản Phẩm mới nhất này cho bạn lựa chọn?</p>
@@ -75,7 +75,7 @@
   <h2 class="h2">
     <a href="#" title="Dự Án Mới ">
       Mẫu
-      <span>  Nhà cấp 4 hiện đại. </span>
+      <span> nhà mới nhất từ YOURHOUSE </span>
     </a>
   </h2>
   <p class="tdduan">Dự án mới nhất này có đang ở gần bạn ?</p>
@@ -154,5 +154,6 @@
     </div>
 
   </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8562115876744!2d108.17188957586232!3d16.07294963933701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218e3918b461d%3A0x21027ebeefac9896!2zMTIzIEzDvSBUaMOhaSBUw7RuZywgVGhhbmggS2jDqiBUw6J5LCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1702197521262!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   
 </main>

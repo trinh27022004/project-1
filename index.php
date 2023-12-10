@@ -123,7 +123,6 @@ if (isset($_GET['action'])) {
                 $id = $_GET['id_sp'];
                 $load_bl = loadall_bluan($id);
                 $onesp = loadone_sp($id);
-                $spcl = loadone_sp_cungloai($_GET['id_sp'], $id_dm);
 
                 include "./pages/ctietsp.php";
             } else {
